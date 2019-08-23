@@ -1,4 +1,6 @@
 
+console.log("dom manipulation")
+
 var nvInput=Document.createElement("input");
 nvInput.type="text";
 
