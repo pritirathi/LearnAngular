@@ -1,5 +1,6 @@
 var Vehicle = /** @class */ (function () {
     function Vehicle(speed, wheels) {
+        this.dis = function () { return console.log('fat arrow function from class'); };
         this.speed = speed;
         this.wheels = wheels;
     }
@@ -10,3 +11,4 @@ var Vehicle = /** @class */ (function () {
 }());
 var newVehicle = new Vehicle('fast', 2);
 newVehicle.display();
+newVehicle.dis();
