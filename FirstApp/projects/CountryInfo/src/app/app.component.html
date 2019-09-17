@@ -1,8 +1,19 @@
+
 <div class="container">
     <div class="col-md-12">
-<app-select-country></app-select-country>
+<app-select-country [ctrDetails]="obj" (evCountry)="onChange($event)"></app-select-country>
 </div>
+
 <div class="col-md-12">
-    <app-body-country></app-body-country>
+<app-country-flag [ctrD]="obj"></app-country-flag>
 </div>
+
+<div class="col-md-12">
+    <app-body-country [ctrD]="obj"></app-body-country>
+</div>
+
+<div class="col-md-12">
+    <app-comp-footer [ctrD]="obj"></app-comp-footer>
+    </div>
+    
 </div>
